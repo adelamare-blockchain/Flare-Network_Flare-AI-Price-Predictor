@@ -1,8 +1,9 @@
 import { ethers } from "ethers";
-import { abi } from "@/artifacts/contracts/PriceRecorder.sol/PriceRecorder.json";
+import PriceRecorderJson from "@/artifacts/contracts/PriceRecorder.sol/PriceRecorder.json";
 
 // Deployed address
 const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS; // Replace with your deployed address
+const abi = PriceRecorderJson.abi;
 
 export async function connectContract() {
   if (!contractAddress) {

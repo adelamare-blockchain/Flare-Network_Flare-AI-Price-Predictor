@@ -42,6 +42,3 @@ next-env.d.ts
 
 # Ignore generated artifacts
 src/artifacts/*
-
-# Force JSON ABI inclusion
-// !src/artifacts/contracts/**/*.json

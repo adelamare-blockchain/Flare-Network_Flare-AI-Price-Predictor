@@ -44,4 +44,4 @@ next-env.d.ts
 src/artifacts/*
 
 # Force JSON ABI inclusion
-!src/artifacts/contracts/**/*.json
+// !src/artifacts/contracts/**/*.json

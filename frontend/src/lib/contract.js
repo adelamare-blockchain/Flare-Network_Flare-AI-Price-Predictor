@@ -1,10 +1,8 @@
 import { ethers } from "ethers";
-import PriceRecorderJson from "@/artifacts/contracts/PriceRecorder.sol/PriceRecorder.json";
+import { contractABI } from "@/utils/abi";
 
 // Deployed address
 const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS; // Replace with your deployed address
-const abi = PriceRecorderJson.abi;
-
 export async function connectContract() {
   if (!contractAddress) {
     throw new Error(
@@ -13,7 +11,7 @@ export async function connectContract() {
   }
   const provider = new ethers.BrowserProvider(window.ethereum);
   const signer = await provider.getSigner();
-  return new ethers.Contract(contractAddress, abi, signer);
+  return new ethers.Contract(contractAddress, contractABI, signer);
 }
 
 // Record a new price

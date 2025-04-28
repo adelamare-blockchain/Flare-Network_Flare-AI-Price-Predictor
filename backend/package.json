@@ -1,4 +1,11 @@
 {
+  "name": "flare-networks_dapp-flare-ai-price-predictor-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Flare AI Price Predictor Backend - Flare Dev Ambassador Program #2",
+  "main": "hardhat.config.js",
+  "author": "Antoine Delamare - https://github.com/adelamare-blockchain",
+  "license": "MIT",
   "devDependencies": {
     "@flarenetwork/flare-periphery-contracts": "^0.1.22",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",

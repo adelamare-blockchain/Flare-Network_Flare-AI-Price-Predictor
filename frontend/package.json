@@ -1,7 +1,11 @@
 {
-  "name": "frontend",
+  "name": "flare-networks_dapp-flare-ai-price-predictor-frontend",
   "version": "0.1.0",
   "private": true,
+  "description": "Flare AI Price Predictor Frontend - Flare Dev Ambassador Program #2",
+  "main": "src/app/page.js",
+  "author": "Antoine Delamare - https://github.com/adelamare-blockchain",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
